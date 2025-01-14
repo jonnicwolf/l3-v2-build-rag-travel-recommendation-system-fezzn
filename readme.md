@@ -86,17 +86,18 @@ This project uses the [Mountains vs Beaches Preference Dataset](https://www.kagg
 - Vector caching
 - Budget filtering
 - Detailed explanations
+- More advanced CSS and Animation
 
 ## Getting Started
 
 1. Clone this repository
-2. Review LEARNING_JOURNEY.md
+2. Review [LEARNING_JOURNEY.md](./learning-journey.md)
 3. Start your journey with Claude
 4. Follow the development phases outlined in the learning journey
 
 ## Support
-- Refer to LEARNING_JOURNEY.md for guided development
+- Refer to [LEARNING_JOURNEY.md](./learning-journey.md) for guided development
 - Use Claude for implementation guidance
-- Check provided documentation for concepts
+
 
 Remember: The goal is to understand and learn RAG systems by building one, not just to copy a solution. Work through each step with Claude to get the most out of this learning experience.
