@@ -34,7 +34,7 @@ These skills are increasingly valuable as companies seek to provide more persona
 ## Learning Approach
 This project is designed as a learning journey where you'll work with Claude to understand and implement each component. Rather than providing exact implementations, you'll be guided through the process of building the application while understanding the core concepts.
 
-👉 **Start with LEARNING_JOURNEY.md for your step-by-step guide to building this project with Claude.**
+👉 **Start with [LEARNING_JOURNEY.md](./learning-journey.md) for your step-by-step guide to building this project with Claude.**
 
 ## Project Overview
 Create a web-based travel recommendation system that:
