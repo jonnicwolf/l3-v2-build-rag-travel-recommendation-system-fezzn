@@ -1,154 +1,102 @@
 # Travel Recommender - RAG-based Travel Recommendation Engine
 
-<img src="./assets/travel.webp" alt="Travel Recommender" width="500">
+## Context
+This project demonstrates the implementation of a RAG (Retrieval Augmented Generation) system - a powerful AI architecture that combines the precision of information retrieval with the flexibility of AI generation. Unlike traditional AI that relies purely on trained knowledge, RAG first retrieves relevant information from a database and then uses that specific information to generate responses.
+
+In this project, you'll learn how to build this system step by step with the guidance of Claude, Anthropic's AI assistant.
+
+## Real World Application
+This project tackles a common challenge in the travel and recommendation industry: how to provide personalized suggestions that are both accurate and context-aware. The techniques you'll learn are similar to those used by:
+
+* Travel Companies:
+  - Airbnb's matching of travelers with ideal accommodations
+  - Booking.com's personalized destination recommendations
+  - Expedia's travel package suggestions
+
+* E-commerce & Entertainment:
+  - Netflix's content recommendations
+  - Spotify's playlist suggestions
+  - Amazon's product recommendations
+
+* Enterprise Applications:
+  - Customer support systems finding relevant documentation
+  - Content management systems with semantic search
+  - Knowledge base systems with context-aware retrieval
+
+The RAG system you'll build demonstrates how modern companies:
+- Move beyond simple keyword matching
+- Use real user behavior patterns
+- Combine AI with actual data for better recommendations
+- Scale recommendations for large user bases
+
+These skills are increasingly valuable as companies seek to provide more personalized, context-aware experiences to their users.
+
+## Learning Approach
+This project is designed as a learning journey where you'll work with Claude to understand and implement each component. Rather than providing exact implementations, you'll be guided through the process of building the application while understanding the core concepts.
+
+👉 **Start with LEARNING_JOURNEY.md for your step-by-step guide to building this project with Claude.**
 
 ## Project Overview
-Create a web-based application that provides travel recommendations based on user preferences using ReactJS, ExpressJS, PostgreSQL with pgvector, and OpenAI's embedding API. This project showcases how to build a modern recommendation system using vector databases, embeddings, and similarity matching in a practical application.
-
-
-## Context
-
-This project demonstrates the implementation of a RAG (Retrieval Augmented Generation) system - a powerful AI architecture that combines the precision of information retrieval with the flexibility of AI generation. Unlike traditional AI that relies purely on trained knowledge, RAG first retrieves relevant information from a database and then uses that specific information to generate responses. Think of it like an AI having access to a specialized knowledge base that it can reference before making recommendations.
-
-In our travel recommender, when a user inputs their preferences (like "winter skiing trip with $2000 budget"), the system:
-1. Converts these preferences into a numerical vector (embedding)
-2. Searches a database of real travel profiles for similar preference patterns
-3. Uses the most similar matches to generate personalized recommendations
-
-This approach, similar to how companies like Airbnb match travelers with destinations, ensures recommendations are grounded in real travel patterns while leveraging AI for personalization.
-
-
-## Project Scope
-This is a production-ready development project aimed at understanding RAG systems and vector databases used in real-world applications. It is broken into 3 tiers of complexity outlined below.
-
-## Technical Learning Takeaways
-* Vector Databases
-  - Understanding pgvector for similarity search
-  - Vector embeddings and how they represent meaning
-  - Cosine similarity for finding similar preferences
-  - Vector indexing and optimization
-
-* RAG Implementation
-  - Retrieval techniques using vector similarity
-  - Converting user inputs to embeddings
-  - Weighted matching strategies
-  - Combining retrieved data with AI generation
-
-* Data Processing
-  - Working with embeddings API
-  - Managing vector dimensions
-  - Data quality and validation
-  - Error handling for embedding generation
-
-* Advanced Concepts
-  - Similarity weights and scoring
-  - Vector caching strategies
-  - Rate limiting for API protection
-  - Creative text generation with AI
-
-## Core Features Required
-* User preference input (season, budget, activities)
-* Vector database storage with pgvector
-* Embedding generation using OpenAI API
-* Weighted similarity search
-* Rate-limited API endpoints
-* Real-time recommendation matching
+Create a web-based travel recommendation system that:
+- Takes user travel preferences
+- Matches them with similar profiles using vector similarity
+- Generates personalized recommendations
 
 ## Technical Stack
 * Frontend: ReactJS
 * Backend: ExpressJS
 * Database: PostgreSQL with pgvector
 * AI Integration: OpenAI API for embeddings
-* Additional: Express Rate Limiter, pg-promise
 
-## Tiers of Development
+## Dataset
+This project uses the [Mountains vs Beaches Preference Dataset](https://www.kaggle.com/datasets/jahnavipaliwal/mountains-vs-beaches-preference) from Kaggle, containing over 52,000 travel preference profiles.
+
+## Initial Setup Requirements
+
+1. Tools/Accounts Needed:
+- Node.js and npm
+- PostgreSQL
+- OpenAI API key
+- Code editor
+- Git
+
+2. Download Required Dataset:
+- Mountains vs Beaches dataset from Kaggle
+- CSV to SQL converter access
+
+3. Recommended Knowledge:
+- Basic React
+- Basic Express
+- Basic PostgreSQL
+- REST APIs
+
+## Development Tiers
 
 ### Tier 1: Basic Recommendation Engine
-* Set up PostgreSQL with pgvector extension
-* Create basic database schema for travel profiles
-* Implement basic similarity search
-* Frontend UI Components:
-  - User input form with dropdowns
-  - Basic styling and layout
-  - Simple results display
-  - Loading states
-* Display basic recommendations
+- Database setup with pgvector
+- Basic similarity search
+- Simple frontend form
 
 ### Tier 2: Enhanced Features
-* Add weighted similarity search
-* Implement rate limiting
-* Add input validation
-* Create helper endpoints
-* Enhance UI with better user feedback
-* Add error handling
-* Creative Enhancement:
-  - Additional OpenAI call to generate personalized travel descriptions
-  - Transform raw recommendations into engaging travel suggestions
-  - Add context-aware travel tips based on selected preferences
+- Weighted recommendations
+- Rate limiting
+- Creative AI descriptions
 
 ### Tier 3: Advanced Features
-* Vector Caching Implementation:
-  - Cache frequently requested embedding vectors
-  - Store similar preference patterns
-  - Implement cache invalidation strategy
-  - Optimize vector retrieval performance
-* Add budget range filtering
-* Implement recommendation confidence scores
-* Enhanced activity matching
-* Add detailed explanation for recommendations
-
-## Technical Requirements
-
-### Frontend (React)
-* Single Page Application using React
-* Form handling for user preferences
-* Dynamic activity options based on season
-* Loading states
-* Error handling
-* Results display component
-
-### Backend (Express)
-* Vector similarity search endpoints
-* Rate limiting middleware
-* Helper endpoints for form options
-* OpenAI API integration
-* PostgreSQL with pgvector queries
-
-### Database
-* pgvector extension setup
-* Embeddings storage
-* Profile data management
-* Efficient similarity queries
-
-## Setup and Installation
-
-### Database Setup
-1. Install PostgreSQL
-2. Install pgvector extension
-3. Create database schema
-4. Import sample data
-
-### Backend Setup
-1. Install dependencies
-2. Configure environment variables
-3. Set up OpenAI API key
-4. Initialize Express server
-
-### Frontend Setup
-1. Create React app
-2. Install dependencies
-3. Set up components
-4. Configure API endpoints
+- Vector caching
+- Budget filtering
+- Detailed explanations
 
 ## Getting Started
-1. Review the technical requirements
-2. Set up your development environment
-3. Install required dependencies
-4. Configure your database
-5. Test your endpoints
-6. Build the frontend interface
 
-## Documentation
-* Technical Documentation - Details on RAG implementation and vector similarity
-* API Documentation - Available endpoints and usage
-* Database Schema - Table structures and relationships
+1. Clone this repository
+2. Review LEARNING_JOURNEY.md
+3. Start your journey with Claude
+4. Follow the development phases outlined in the learning journey
+
+## Support
+- Refer to LEARNING_JOURNEY.md for guided development
+- Use Claude for implementation guidance
+- Check provided documentation for concepts
+
+Remember: The goal is to understand and learn RAG systems by building one, not just to copy a solution. Work through each step with Claude to get the most out of this learning experience.
