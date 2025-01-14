@@ -1,6 +1,6 @@
 # Travel Recommender - RAG-based Travel Recommendation Engine
 
-<img src="./assets/travel.webp" alt="Travel Recommender" width="700">
+<img src="./assets/travel.webp" alt="Travel Recommender" width="500">
 
 ## Project Overview
 Create a web-based application that provides travel recommendations based on user preferences using ReactJS, ExpressJS, PostgreSQL with pgvector, and OpenAI's embedding API. This project showcases how to build a modern recommendation system using vector databases, embeddings, and similarity matching in a practical application.
