@@ -1,5 +1,7 @@
 # Travel Recommender - RAG-based Travel Recommendation Engine
 
+<img src="./assets/travel.webp" alt="Travel Recommender" width="500">
+
 ## Context
 This project demonstrates the implementation of a RAG (Retrieval Augmented Generation) system - a powerful AI architecture that combines the precision of information retrieval with the flexibility of AI generation. Unlike traditional AI that relies purely on trained knowledge, RAG first retrieves relevant information from a database and then uses that specific information to generate responses.
 
@@ -32,15 +34,17 @@ The RAG system you'll build demonstrates how modern companies:
 These skills are increasingly valuable as companies seek to provide more personalized, context-aware experiences to their users.
 
 ## Learning Approach
-This project is designed as a learning journey where you'll work with Claude to understand and implement each component. Rather than providing exact implementations, you'll be guided through the process of building the application while understanding the core concepts.
-
-👉 **Start with [LEARNING_JOURNEY.md](./learning-journey.md) for your step-by-step guide to building this project with Claude.**
+This project is designed as a learning journey where you'll work with generative AI e.g. Claude to understand and implement each component. Rather than providing exact implementations, you'll be guided through the process of building the application while understanding and learning the core concepts.
 
 ## Project Overview
 Create a web-based travel recommendation system that:
 - Takes user travel preferences
 - Matches them with similar profiles using vector similarity
 - Generates personalized recommendations
+
+
+👉 **Start with [SESSIONS](./sessions.md) for your step-by-step guide to building this project with Claude.**
+
 
 ## Technical Stack
 * Frontend: ReactJS
@@ -70,34 +74,17 @@ This project uses the [Mountains vs Beaches Preference Dataset](https://www.kagg
 - Basic PostgreSQL
 - REST APIs
 
-## Development Tiers
+## Tiers
 
-### Tier 1: Basic Recommendation Engine
-- Database setup with pgvector
-- Basic similarity search
-- Simple frontend form
+This project is designed to be built in 3 tiers. Tier 1 is the true goal of this project. Each tier builds on the previous one, adding more features and complexity. But remember, the goal is to understand and learn RAG systems by building one, not just to copy a solution. Total completion is not the goal, understanding is. The tier explanation is in [tier.md](./tier.md)
 
-### Tier 2: Enhanced Features
-- Weighted recommendations
-- Rate limiting
-- Creative AI descriptions
-
-### Tier 3: Advanced Features
-- Vector caching
-- Budget filtering
-- Detailed explanations
-- More advanced CSS and Animation
-
+## Don't Panic!
+This looks like a lot! Don't worry, let's break it down into manageable chunks. Take a look at the [Session Breakdown](sessions.md) file for a breakdown of the project and how you could potentially plan to use your time to complete the project. Also take a look at [Using Generative AI to Learn Concepts](learning-journey.md) as well as [Prompts](prompts.md) to understand how to use prompts to help you learn concepts and implement your project.
 ## Getting Started
 
 1. Clone this repository
-2. Review [LEARNING_JOURNEY.md](./learning-journey.md)
+2. Review [Sessions](./sessions.md)
 3. Start your journey with Claude
-4. Follow the development phases outlined in the learning journey
-
-## Support
-- Refer to [LEARNING_JOURNEY.md](./learning-journey.md) for guided development
-- Use Claude for implementation guidance
-
+4. Follow the development phases outlined in the seaddions
 
 Remember: The goal is to understand and learn RAG systems by building one, not just to copy a solution. Work through each step with Claude to get the most out of this learning experience.

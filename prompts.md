@@ -1,8 +1,33 @@
 # Building a RAG-based Travel Recommender: Learning Journey
 
-## Before You Start Coding
+## Session 1: Planning
+Ask Claude:
+- "Can you explain the overall RAG system architecture?"
+- "What components will we need to build?"
+- "How will data flow through our system?"
+- "What development environment do we need?"
+- "Which APIs and tools should we prepare?"
+- "How should we structure our project?"
+- "What order should we build components in?"
+- "What are potential challenges we might face?"
+- "How can we test each component?"
 
-### 1. Understanding Vector Databases (Day 1 Morning)
+You should understand:
+- ✓ The complete system architecture
+- ✓ Each component's role
+- ✓ How components interact
+
+Checkpoint: Can you:
+- ✓ List all required tools and APIs?
+- ✓ Explain where each tool fits in?
+- ✓ Draw a system diagram?
+- ✓ Create a development timeline?
+- ✓ Identify critical dependencies?
+- ✓ Plan your testing approach?
+
+## Session 2: Understanding Core Concepts
+
+### 1. Understanding Vector Databases
 Ask Claude:
 - "What is a vector database in simple terms?"
 - "How is it different from a regular database?"
@@ -13,7 +38,7 @@ You should understand:
 - ✓ Why we need vector databases for recommendations
 - ✓ What makes items "similar" in a vector database
 
-### 2. Understanding Embeddings (Day 1 Afternoon)
+### 2. Understanding Embeddings
 Ask Claude:
 - "What are embeddings and why do we need them?"
 - "How do embeddings capture meaning?"
@@ -24,7 +49,7 @@ You should understand:
 - ✓ Why similar meanings have similar numbers
 - ✓ How embeddings help find similar items
 
-### 3. Understanding Weights (Day 1 Evening)
+### 3. Understanding Weights
 Ask Claude:
 - "Why do we need weights in our recommendations?"
 - "How do weights make recommendations better?"
@@ -37,7 +62,7 @@ You should understand:
 
 ## Development Journey
 
-### Phase 1: Database Setup (Day 2)
+### Session 3: Database Setup
 First, ask Claude about setting up PostgreSQL. Claude can guide you through:
 - Installing PostgreSQL
 - Adding pgvector
@@ -48,7 +73,7 @@ Checkpoint: Can you:
 - ✓ Create a test table?
 - ✓ Add the vector extension?
 
-### Phase 2: Understanding Your Data (Day 2-3)
+### Session 4: Understanding Your Data
 Ask Claude about:
 - Loading the Mountains vs Beaches dataset
 - Which fields are important for recommendations
@@ -59,7 +84,7 @@ Checkpoint: Can you:
 - ✓ Query the basic data?
 - ✓ Understand the relationships between fields?
 
-### Phase 3: Creating Embeddings (Day 3-4)
+### Session 5: Creating Embeddings
 Work with Claude to:
 - Set up OpenAI API
 - Create your first embedding
@@ -70,7 +95,7 @@ Checkpoint: Can you:
 - ✓ Store it in your database?
 - ✓ Retrieve it correctly?
 
-### Phase 4: Building Basic Recommendations (Day 4-5)
+### Session 6: Building Basic Recommendations
 Ask Claude about:
 - Writing similarity queries
 - Testing with sample inputs
@@ -81,18 +106,7 @@ Checkpoint: Can you:
 - ✓ Get meaningful recommendations?
 - ✓ Explain why matches are similar?
 
-### Phase 5: Adding Weights (Day 5-6)
-Work with Claude on:
-- Identifying logical combinations
-- Implementing weight calculations
-- Testing weighted results
-
-Checkpoint: Can you:
-- ✓ Explain your weighting strategy?
-- ✓ See improvement in recommendations?
-- ✓ Handle edge cases?
-
-### Phase 6: Frontend Development (Day 6-7)
+### Session 7: Frontend Development
 Ask Claude about:
 - Setting up the React form
 - Handling API calls
@@ -105,7 +119,7 @@ Checkpoint: Can you:
 
 ## Key Learning Checkpoints
 
-After each phase, ask yourself:
+After each session, ask yourself:
 1. Could I explain this concept to someone else?
 2. Do I understand why we're doing this step?
 3. Can I predict what should happen next?
@@ -135,3 +149,23 @@ If "no" to any of these, ask Claude for clarification before moving on.
 - Ask for debugging strategies
 
 Remember: The goal is understanding, not just copying code. Take time to grasp each concept fully before moving forward.
+
+## Session Time Management
+
+Each session is 2 hours. Use this time to:
+1. Review previous session's concepts (15 minutes)
+2. Work through current session's material (80 minutes)
+3. Test your understanding with checkpoints (15 minutes)
+4. Prepare questions for next session (10 minutes)
+
+If you finish early:
+- Review checkpoints again
+- Try explaining concepts to others
+- Experiment with what you've learned
+- Prepare questions for next session
+
+If you need more time:
+- Note where you got stuck
+- Prepare specific questions for Claude
+- Review related concepts
+- Don't rush - understanding is key
